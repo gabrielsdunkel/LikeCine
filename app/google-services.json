@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "774331272014",
+    "firebase_url": "https://like-cine-default-rtdb.firebaseio.com",
+    "project_id": "like-cine",
+    "storage_bucket": "like-cine.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774331272014:android:d5dd31cf4ccb839d08ec1f",
+        "android_client_info": {
+          "package_name": "com.example.likecine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774331272014-gthb8vp87c5h43qu2bkeqmprl7r2upum.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.likecine",
+            "certificate_hash": "306bac040aee4dd3f159360b76a43257c7f9ed85"
+          }
+        },
+        {
+          "client_id": "774331272014-jj8r54p1rvqa3214m23av7vjdcl1jehq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA7fiJl3stwegMm-V9peSNFAa4KTpzXAg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774331272014-jj8r54p1rvqa3214m23av7vjdcl1jehq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
