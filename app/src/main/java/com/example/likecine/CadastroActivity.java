@@ -26,28 +26,32 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.Collection;
 
-public class MainActivity extends AppCompatActivity {
+public class CadastroActivity extends AppCompatActivity {
     private DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
     private DatabaseReference Usuario = reference.child("Usuario");
 
-    public Button bttCadastro, bttLogin;
+    public EditText inpNome, inpRA;
+    public Button bttCriar;
+    String  nome, RA;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_cadastro);
 
-        bttCadastro = (Button) findViewById(R.id.bttCadastro);
-        bttLogin = (Button) findViewById(R.id.bttLogin);
+        inpNome = (EditText) findViewById(R.id.ptNome);
+        inpRA = (EditText) findViewById(R.id.ptRA);
+        bttCriar = (Button) findViewById(R.id.bttCadastrarRealizar);
 
-        Usuario.child("2").child("Gabriel").setValue("Aoba");
-
-        bttCadastro.setOnClickListener(new View.OnClickListener(){
+        bttCriar.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, CadastroActivity.class));
+            public void onClick(View view){
+                nome = inpNome.getText().toString();
+                RA = inpRA.getText().toString();
+                Usuario.child(RA).setValue(nome);
             }
         });
+
     }
 
 }

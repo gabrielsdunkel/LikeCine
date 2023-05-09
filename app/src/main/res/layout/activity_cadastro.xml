@@ -1,43 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".CadastroActivity"
+    >
 
-    <Button
-        android:id="@+id/bttLogin"
+    <EditText
+        android:id="@+id/ptNome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#CF1C1C"
-        android:text="Login"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="VTNC"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="172dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/bttCadastro"
+    <EditText
+        android:id="@+id/ptRA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#CF1C1C"
-        android:text="Cadastro"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="RA (xxx.xxxxxx)"
+        app:layout_constraintBottom_toTopOf="@+id/bttCadastrarRealizar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ptNome"
+        app:layout_constraintVertical_bias="0.475" />
+
+    <Button
+        android:id="@+id/bttCadastrarRealizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bttLogin"
-        app:layout_constraintVertical_bias="0.406" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
