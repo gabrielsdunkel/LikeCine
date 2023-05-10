@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         bttCadastro = (Button) findViewById(R.id.bttCadastro);
         bttLogin = (Button) findViewById(R.id.bttLogin);
 
-        Usuario.child("2").child("Gabriel").setValue("Aoba");
+        Usuario.child("2").child("Gabriel").setValue("teste");
 
         bttCadastro.setOnClickListener(new View.OnClickListener(){
             @Override
