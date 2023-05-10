@@ -28,7 +28,7 @@ import java.util.Collection;
 
 public class CadastroActivity extends AppCompatActivity {
     private DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
-    private DatabaseReference Usuario = reference.child("Usuario");
+    private DatabaseReference User = reference.child("Usuario");
 
     public EditText inpNome, inpRA;
     public Button bttCriar;
@@ -48,7 +48,7 @@ public class CadastroActivity extends AppCompatActivity {
             public void onClick(View view){
                 nome = inpNome.getText().toString();
                 RA = inpRA.getText().toString();
-                Usuario.child(RA).setValue(nome);
+                User.child(RA).child("Nome:").setValue(nome);
             }
         });
 

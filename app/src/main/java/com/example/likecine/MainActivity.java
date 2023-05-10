@@ -28,7 +28,7 @@ import java.util.Collection;
 
 public class MainActivity extends AppCompatActivity {
     private DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
-    private DatabaseReference Usuario = reference.child("Usuario");
+    private DatabaseReference User = reference.child("Usuario");
 
     public Button bttCadastro, bttLogin;
 
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         bttCadastro = (Button) findViewById(R.id.bttCadastro);
         bttLogin = (Button) findViewById(R.id.bttLogin);
 
-        Usuario.child("2").child("Gabriel").setValue("teste");
+        User.child("2").child("Gabriel").setValue("teste");
 
         bttCadastro.setOnClickListener(new View.OnClickListener(){
             @Override
