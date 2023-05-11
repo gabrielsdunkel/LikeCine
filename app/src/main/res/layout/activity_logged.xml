@@ -4,15 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DF7E7E"
+    android:backgroundTint="#DF8C8C"
     tools:context=".LoggedActivity">
 
     <Button
-        android:id="@+id/btTeste"
+        android:id="@+id/btPL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Playlist"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#D11A1A" />
 </androidx.constraintlayout.widget.ConstraintLayout>
