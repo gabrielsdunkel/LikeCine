@@ -4,18 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DF7E7E"
-    android:backgroundTint="#DF8C8C"
     tools:context=".LoggedActivity">
 
     <Button
         android:id="@+id/btPL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#B51919"
         android:text="Playlist"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.777"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.91"
         app:strokeColor="#D11A1A" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btPL"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.91" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1B45C3"
+        app:title="LikeCine"
+        app:titleTextColor="@android:color/white"
+        tools:ignore="MissingConstraints" />
+
+    <ListView
+        android:id="@+id/lvFilmes"
+        android:layout_width="345dp"
+        android:layout_height="335dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
